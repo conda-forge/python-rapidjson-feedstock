@@ -16,14 +16,16 @@ We do not support legacy python versions, you will need to upgrade to Python 3 t
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-rapidjson-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-rapidjson-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-rapidjson-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-rapidjson-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-rapidjson-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-rapidjson-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/python-rapidjson-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/python-rapidjson-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/python-rapidjson-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/python-rapidjson-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/python-rapidjson-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/python-rapidjson-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-rapidjson/badges/version.svg)](https://anaconda.org/conda-forge/python-rapidjson)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-rapidjson/badges/downloads.svg)](https://anaconda.org/conda-forge/python-rapidjson)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--rapidjson-green.svg)](https://anaconda.org/conda-forge/python-rapidjson) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-rapidjson.svg)](https://anaconda.org/conda-forge/python-rapidjson) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-rapidjson.svg)](https://anaconda.org/conda-forge/python-rapidjson) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-rapidjson.svg)](https://anaconda.org/conda-forge/python-rapidjson) |
 
 Installing python-rapidjson
 ===========================

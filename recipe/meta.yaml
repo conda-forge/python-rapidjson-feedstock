@@ -1,30 +1,26 @@
 {% set name = "python-rapidjson" %}
-{% set version = "0.5.2" %}
-{% set sha256 = "6d822db35b13155a62f4b36ab67bf58e3cd0a58d78932f8a895b1304d226b754" %}
-{% set rapidjson_version = "1.1.0" %}
+{% set version = "0.7.2" %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: "7bf4c40ad402eacce5a4e80f4bfb39e38fa9662a95c2a58f3f497f590bfd1c7d"
 
 build:
-  number: 1001
+  number: 0
   skip: True  # [py27]
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - pip
     - python
-    - setuptools
-    - rapidjson =={{ rapidjson_version }}
-
   run:
     - python
 

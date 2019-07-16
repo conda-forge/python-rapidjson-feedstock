@@ -27,6 +27,13 @@ requirements:
 test:
   imports:
     - rapidjson
+  requires:
+    - pytest
+    - pytz
+  source_files:
+    - tests
+  commands:
+    - pytest tests
 
 about:
   home: https://github.com/python-rapidjson/python-rapidjson

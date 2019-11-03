@@ -8,9 +8,11 @@ package:
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
   sha256: 9753c657d65550d9ad634cf11743e7e68d295b9290a997ee08a9538d57f1cf8d
+  patches:
+    - 0001-Use-repr-instead-of-str-to-obtain-string-representat.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py27]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 

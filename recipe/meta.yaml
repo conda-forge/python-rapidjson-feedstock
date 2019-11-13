@@ -8,8 +8,6 @@ package:
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
   sha256: ad80bd7e4bb15d9705227630037a433e2e2a7982b54b51de2ebabdd1611394a1
-  patches:
-    - 0001-Use-repr-instead-of-str-to-obtain-string-representat.patch
 
 build:
   number: 0

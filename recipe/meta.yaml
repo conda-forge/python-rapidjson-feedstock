@@ -1,5 +1,5 @@
 {% set name = "python-rapidjson" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,12 +7,10 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 9753c657d65550d9ad634cf11743e7e68d295b9290a997ee08a9538d57f1cf8d
-  patches:
-    - 0001-Use-repr-instead-of-str-to-obtain-string-representat.patch
+  sha256: ad80bd7e4bb15d9705227630037a433e2e2a7982b54b51de2ebabdd1611394a1
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py27]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 

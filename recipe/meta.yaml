@@ -1,18 +1,18 @@
 {% set name = "python-rapidjson" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: ad80bd7e4bb15d9705227630037a433e2e2a7982b54b51de2ebabdd1611394a1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e9c2b09acd96c1a9b69fb95f76d6e712f8dc9256290714d0aa7e5177a6b9062c
 
 build:
-  number: 1
-  skip: True  # [py27]
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  number: 0
+  skip: true  # [py27]
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   build:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python wrapper around rapidjson'
+  summary: Python wrapper around rapidjson
   description: |
     Python wrapper around RapidJSON. RapidJSON is an extremely fast C++ json serialization library.
     We do not support legacy python versions, you will need to upgrade to Python 3 to use this library.

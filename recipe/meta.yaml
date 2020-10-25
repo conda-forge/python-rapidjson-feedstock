@@ -32,8 +32,7 @@ test:
   source_files:
     - tests
   commands:
-    - pytest tests  # [not pypy3.6]
-    - pytest --ignore=tests/test_memory_leaks.py tests  # [pypy3.6]
+    - pytest --ignore=tests/test_memory_leaks.py tests
 
 about:
   home: https://github.com/python-rapidjson/python-rapidjson

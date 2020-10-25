@@ -11,7 +11,6 @@ source:
 
 build:
   number: 1
-  skip: true  # [py27]
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -33,7 +32,8 @@ test:
   source_files:
     - tests
   commands:
-    - pytest tests
+    - pytest tests  # [not pypy3.6]
+    - pytest --ignore=tests/test_memory_leaks.py tests  # [pypy3.6]
 
 about:
   home: https://github.com/python-rapidjson/python-rapidjson

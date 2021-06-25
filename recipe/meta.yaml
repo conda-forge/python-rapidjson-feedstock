@@ -10,8 +10,7 @@ source:
   sha256: 801d6e5c2f8b248e5dc3a084e2298752792b9b7f3c78e02c6bd2ca667c751ed7
 
 build:
-  number: 0
-  skip: true  # [py27]
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -35,7 +34,7 @@ test:
   source_files:
     - tests
   commands:
-    - pytest tests
+    - pytest --ignore=tests/test_memory_leaks.py tests
 
 about:
   home: https://github.com/python-rapidjson/python-rapidjson

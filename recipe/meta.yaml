@@ -1,5 +1,5 @@
 {% set name = "python-rapidjson" %}
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a61fa61e41b0b85ba9e78444242fddcb3be724de1df79314e6b4766b66e4e11c
+  sha256: 9353a5eeb23a43556fa382ff94b3f6d67c663e31a2cfd220268c13e3f848fddc
 
 build:
   number: 0

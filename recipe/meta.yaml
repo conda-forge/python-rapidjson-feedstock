@@ -1,16 +1,16 @@
 {% set name = "python-rapidjson" %}
-{% set version = "1.23" %}
+{% set version = "1.24" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0f845daeb26be147f5720a8c410308235092bb4fbb81ea408aa77203e26296fb
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2b9267004053e0b0e6fdcb8e45fcaabfef88ef53999597d99b5050fbe393a60b
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:

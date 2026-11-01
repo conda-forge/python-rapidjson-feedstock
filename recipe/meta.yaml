@@ -1,5 +1,5 @@
 {% set name = "python-rapidjson" %}
-{% set version = "1.25" %}
+{% set version = "1.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 97c1de449552ec28ac5ae89350c2b53e4c5d21a9b4308d7a1630b1099e5db9fc
+  sha256: db95af0b5ed5f89d4f91480477a0ea8c7646283e489dd9046e28503e85e08f98
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
